@@ -12,3 +12,10 @@
 
   end
 
+  class ReplaceSecretWordSLetters
+    choosing_word = RandomSecretWordList.new("time", "people", "way", "place")
+    secret_word = choosing_word.random_word
+    secret_word.each_char { |letter| print letter.replace("_ ") }
+  end
+
+  ReplaceSecretWordSLetters.new
