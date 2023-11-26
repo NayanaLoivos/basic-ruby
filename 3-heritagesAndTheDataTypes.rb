@@ -23,12 +23,21 @@
   puts null.class #NilClass
   puts null.class.superclass #Object
 
-  #Range
-  range = (1...8)
-  puts range.class #Range
-  puts range.class.superclass #Object
-  puts range.class.superclass.superclass #BasicObject
-  puts range.class.superclass.superclass.superclass #'impressão vazia'
+  #Range exclusivo
+  #Exclui o último elemento do range.
+  range1 = (1...8)
+  range1.each { |i| puts i }
+  puts range1.class #Range
+  puts range1.class.superclass #Object
+
+  #Range inclusivo
+  #Inclui o último elemento do range.
+  range2 = (1..8)
+  range2.each { |i| puts i }
+  puts range2.class #Range
+  puts range2.class.superclass #Object
+  puts range2.class.superclass.superclass #BasicObject
+  puts range2.class.superclass.superclass.superclass #'impressão vazia'
 
   #Hierarquia das classes em Ruby
     #Essa hierarquia corresponde a uma cadeia de heranças as quais passam seus métodos e atributos a outras classes.
