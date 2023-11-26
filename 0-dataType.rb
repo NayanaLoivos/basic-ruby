@@ -6,7 +6,7 @@
 #armazenar e o conjunto de operações que pode ser executado com essa variável.
 #
 #Data Type
-#
+
     #String
     word = "Nay"
     puts word.class
@@ -15,7 +15,7 @@
             #Está na concatenação de string; Quando temos aspas duplas,
             #conseguimos concatenar assim: "#{}" e se temos aspas
             #simples concatenamos assim: "..." + word.
-    #
+
     #Char
     letter = word[0]
     puts letter
